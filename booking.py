@@ -35,7 +35,7 @@ class BookingWindow(QWidget):
 
         # Window settings
         self.setWindowTitle("Hotel Booking & Payment")
-        self.setFixedSize(430, 600)
+        self.setFixedSize(430,520)
 
         # Main layout
         layout = QVBoxLayout()
@@ -49,7 +49,7 @@ class BookingWindow(QWidget):
 
         title.setStyleSheet("""
             QLabel {
-                color: #1e3a8a;
+                color: #155724;
                 font-size: 22px;
                 font-weight: bold;
                 padding: 8px;
@@ -76,7 +76,7 @@ class BookingWindow(QWidget):
 
         room_number_label.setStyleSheet("""
             QLabel {
-                color: #374151;
+                color: #155724;
                 font-size: 14px;
                 padding: 3px;
             }
@@ -84,7 +84,7 @@ class BookingWindow(QWidget):
 
         room_type_label.setStyleSheet("""
             QLabel {
-                color: #374151;
+                color: #155724;
                 font-size: 14px;
                 padding: 3px;
             }
@@ -111,7 +111,7 @@ class BookingWindow(QWidget):
 
         check_in_title.setStyleSheet("""
             QLabel {
-                color: #374151;
+                color: #155724;
                 font-weight: bold;
                 padding-top: 5px;
             }
