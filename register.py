@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout, QMessageBox
 from database import register_user
-
+from PyQt5.QtCore import Qt
 class RegisterWindow(QWidget):
     def __init__(self, login_window=None):
         super().__init__()
@@ -11,6 +11,7 @@ class RegisterWindow(QWidget):
         layout = QVBoxLayout()
         title = QLabel("Create New Account")
         title.setStyleSheet("font-size: 22px; font-weight: bold;")
+        title.setAlignment(Qt.AlignCenter)
 
         self.username_input = QLineEdit()
         self.username_input.setPlaceholderText("Username")
