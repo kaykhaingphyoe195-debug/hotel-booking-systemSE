@@ -27,6 +27,31 @@ class RegisterWindow(QWidget):
         register_button.clicked.connect(self.register)
         back_button = QPushButton("Back to Login")
         back_button.clicked.connect(self.back_to_login)
+        register_button.setStyleSheet("""
+            QPushButton {
+                background-color: #2563eb;
+                color: white;
+                border-radius: 5px;
+                font-weight: bold;
+                padding: 8px;
+            }
+            QPushButton:hover {
+                background-color: #1d4ed8;
+            }
+        """)
+
+        back_button.setStyleSheet("""
+            QPushButton {
+                background-color: #e74c3c;
+                color: white;
+                border-radius: 5px;
+                font-weight: bold;
+                padding: 8px;
+            }
+            QPushButton:hover {
+                background-color: #c0392b;
+            }
+        """)
 
         for widget in [title, self.username_input, self.email_input,
                        self.password_input, self.confirm_password_input,
