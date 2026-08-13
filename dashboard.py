@@ -66,6 +66,7 @@ class DashboardWindow(QWidget):
         background-color: #c0392b;
     }
 """)
+        
 
         logout_button = QPushButton("Logout")
         logout_button.clicked.connect(self.logout)
