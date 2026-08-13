@@ -36,6 +36,12 @@ class BookingWindow(QWidget):
         # Window settings
         self.setWindowTitle("Hotel Booking & Payment")
         self.setFixedSize(430,520)
+        self.setStyleSheet("""
+            QWidget {
+                background-color: #d4edda;
+                color: #155724;
+            }
+        """)
 
         # Main layout
         layout = QVBoxLayout()
@@ -207,7 +213,7 @@ class BookingWindow(QWidget):
         # Total amount
         self.total_label.setStyleSheet("""
             QLabel {
-                color: #1e40af;
+                color: #155724;
                 background-color: #dbeafe;
                 padding: 10px;
                 border-radius: 6px;
@@ -272,7 +278,7 @@ class BookingWindow(QWidget):
 
         self.payment_method.setStyleSheet("""
             QComboBox {
-                background-color: white;
+                background-color: blue;
                 color: #222222;
                 border: 1px solid #cbd5e1;
                 border-radius: 5px;
@@ -280,7 +286,7 @@ class BookingWindow(QWidget):
             }
 
             QComboBox QAbstractItemView {
-                background-color: white;
+                background-color: blue;
                 color: #222222;
                 selection-background-color: #dbeafe;
                 selection-color: #1e3a8a;
