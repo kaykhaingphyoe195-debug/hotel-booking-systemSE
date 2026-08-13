@@ -2,6 +2,7 @@ from PyQt5.QtWidgets import QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout
 from database import login_user
 from register import RegisterWindow
 from dashboard import DashboardWindow
+from PyQt5.QtCore import Qt
 
 class LoginWindow(QWidget):
     def __init__(self):
@@ -15,6 +16,7 @@ class LoginWindow(QWidget):
 
         self.username_input = QLineEdit()
         self.username_input.setPlaceholderText("Username")
+        title.setAlignment(Qt.AlignCenter)
         self.password_input = QLineEdit()
         self.password_input.setPlaceholderText("Password")
         self.password_input.setEchoMode(QLineEdit.Password)
